@@ -1,5 +1,6 @@
 import SwiftUI
 import WebKit
+import NewsCore
 
 struct ArticleDetailView: View {
     let article: NewsArticle

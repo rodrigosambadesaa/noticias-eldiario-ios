@@ -176,7 +176,7 @@ public actor ConnectivityEngine {
     }
 }
 
-private final class CompletionLatch {
+private final class CompletionLatch: @unchecked Sendable {
     private let lock = NSLock()
     private var completed = false
     private let callback: (Bool) -> Void
